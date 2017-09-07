@@ -19,31 +19,44 @@ export default class AwesomeProject extends Component {
     return (
       <View style={styles.wrapper}>
         <ToolBar />
-        <ScrollView>
-          <TariffPlanTile title={'Nazwa'}/>
+        <ScrollView bounces={false} contentContainerStyle={{ backgroundColor: '#ebe9e9' }}
+         onMomentumScrollBegin={() => console.log('startScrolling')} >
 
-          <TariffPlanTile title={'Nazwa'}/>
-          <TariffPlanTile title={'Nazwa'}/>
-          <TariffPlanTile title={'Nazwa'}/>
-          <TariffPlanTile title={'Nazwa'}/>
-          <TariffPlanTile title={'Nazwa'}/>
-          <TariffPlanTile title={'Nazwa'}/>
-          <TariffPlanTile title={'Nazwa'}/>
-          <TariffPlanTile title={'Nazwa'}/>
-          <TariffPlanTile title={'Nazwa'}/>
-          <TariffPlanTile title={'Nazwa'}/>
-          <TariffPlanTile title={'Nazwa'}/>
-          <TariffPlanTile title={'Nazwa'}/>
-          <TariffPlanTile title={'Nazwa'}/>
-          <TariffPlanTile title={'Nazwa'}/>
-          <TariffPlanTile title={'Nazwa'}/>
-          <TariffPlanTile title={'Nazwa'}/>
-          <TariffPlanTile title={'Nazwa'}/>
-          <TariffPlanTile title={'Nazwa'}/>
-          <TariffPlanTile title={'Nazwa'}/>
-          <TariffPlanTile title={'Nazwa'}/>
-          <TariffPlanTile title={'Nazwa'}/>
-          <TariffPlanTile title={'Nazwa'}/>
+          <View style={{ flex: 1, flexDirection: 'column', }}>
+            <View style={{ height: 16, backgroundColor: '#ebe9e9' }}></View>
+            <View style={{ flex: 1, flexDirection: 'row' }}>
+              <View style={{ width: 16, backgroundColor: '#ebe9e9' }}></View>
+              <View style={{ flex: 1, backgroundColor: 'white' }}>
+                <TariffPlanTile title={'Nazwa'} />
+              </View>
+              <View style={{ width: 16, backgroundColor: '#ebe9e9' }}></View>
+            </View>
+          </View>
+
+
+          <View style={{ flex: 1, flexDirection: 'column', }}>
+            <View style={{ height: 16, backgroundColor: '#ebe9e9' }}></View>
+            <View style={{ flex: 1, flexDirection: 'row' }}>
+              <View style={{ width: 16, backgroundColor: '#ebe9e9' }}></View>
+              <View style={{ flex: 1, backgroundColor: 'white' }}>
+                <TariffPlanTile title={'Nazwa'} />
+              </View>
+              <View style={{ width: 16, backgroundColor: '#ebe9e9' }}></View>
+            </View>
+          </View>
+
+          <View style={{ flex: 1, flexDirection: 'column', }}>
+            <View style={{ height: 16, backgroundColor: '#ebe9e9' }}></View>
+            <View style={{ flex: 1, flexDirection: 'row' }}>
+              <View style={{ width: 16, backgroundColor: '#ebe9e9' }}></View>
+              <View style={{ flex: 1, backgroundColor: 'white' }}>
+                <TariffPlanTile title={'Nazwa'} />
+              </View>
+              <View style={{ width: 16, backgroundColor: '#ebe9e9' }}></View>
+            </View>
+          </View>
+
+          <View style={{ height: 16, backgroundColor: '#ebe9e9' }}></View>
         </ScrollView>
       </View>
     );
@@ -53,7 +66,8 @@ export default class AwesomeProject extends Component {
 const styles = StyleSheet.create({
   wrapper: {
     flex: 1,
-    flexDirection: 'column'
+    flexDirection: 'column',
+    backgroundColor: '#ebe9e9'
   },
 });
 
